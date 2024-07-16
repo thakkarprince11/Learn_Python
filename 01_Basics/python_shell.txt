@@ -1,0 +1,53 @@
+# python3 to start the shell
+python3
+
+# print
+print("Earth")
+
+# will print wohoo 4 times
+"Wohoo" * 4
+
+# score variable and value 100
+score = 100
+
+# score's value will be printed
+score
+
+# importing os
+import os
+
+# os method get current working directory
+os.getcwd()
+
+# It will throw IndentationError: expected an indented block after 'for' statement on line 1
+for c in "Earth":
+... princt(c)
+
+# Give tab after 3 dots to type and enter again if want to run the code
+for c in "Earth":
+...     print(c)
+
+
+# importin sys
+import sys
+
+# Calling sys method platform (withount parentheses)
+sys.platform
+
+
+# importing our file 
+import first
+
+# using method from first
+first.funprint("Earth")
+
+# try to access variable - will throw attribute error because while importing it was not written in the code. if you added later then need close shell start again shell and import again
+first.car_one
+
+# or you can reload import again
+from importlib import reload
+reload(first)
+
+# now again try to access variable
+first.car_one
+

@@ -1,0 +1,72 @@
+# open shell
+python3
+
+# importing math
+import math
+
+# pi value
+math.pi
+
+# 2 power of 100
+2 ** 100
+
+# importing random
+import random
+
+
+# Method random to generate random number
+random.random()
+
+# randomly choose from given choice array
+random.choice([5, 10, 11, 7 ])
+
+# String
+str = "Earth"
+
+# Length of String
+len(str)
+
+# Index of String
+str[0]
+
+# try to assign new value to particular string index - will throw error 
+str[0] = 'P'
+
+# Index negetage of String
+str[-1]
+
+# String Slicing
+str[1:3]
+
+# dir Method
+dir(str)
+
+# List
+newlist = [5, "Earth", 11.7]
+
+# Length of List
+len(newlist)
+
+# Index of List
+newlist[1]
+
+# List Slicing
+newlist[0:2]
+
+# Dictionary
+myDict = {'e' : 'Earth', 'z' : 'Z'}
+
+# Dictionary Key value
+myDict['e']
+
+# Length of Dictionary
+len(myDict)
+
+# Tuple
+myTup = (1, 2, 4, 5)
+
+# Index of Tuple
+myTup[3]
+
+# Length of Tuple
+len(myTup)

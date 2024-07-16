@@ -1,0 +1,92 @@
+# String in python shell
+python3
+
+# String
+eart = 'Earth'
+eart
+print(eart)
+
+# Slice String
+first_char = eart[0]
+print(first_char)
+
+sliced_eart = eart[0:4]
+print(sliced_eart)
+
+num_list = "0123456789"
+num_list[:]
+num_list[3:]
+num_list[:7]
+num_list[0:7]
+num_list[0:7:2]             # returns '0246'
+num_list[0:7:3]             # returns '036'
+
+# lowercase
+print(eart.lower())
+
+# uppercase
+print(eart.upper())
+
+
+# Spaces in the String - strip method
+e = '   Earth   '
+e
+print(e.strip())
+
+
+# Replace
+d = 'down to eart'
+print(d.replace('eart', 'earth'))
+
+# Convert String to List - split method
+cars = "Porsche, Bugatti, Tesla, Rivian"
+print(cars.split())
+print(cars.split(', '))
+
+# find in String
+print(cars.find("Rivian"))
+print(cars.find("rivian"))              # returns -1, means didn't find the string
+
+# count the string
+print(cars.count("a"))
+print(cars.count("i"))
+print(cars.count("vi"))
+
+# formating string - fromat method
+item = "Burger"
+qty = 2
+order = "I ordered {} nos of {} from the café"          # {} curly braces acts as placeholder
+print(order.format(qty, item))
+
+# Convert list to String - join method
+car_list = ["Porsche", "Bugatti", "Tesla", "Rivian"]
+print("".join(car_list))
+print(" ".join(car_list))                               # add a space in first parameter
+print("-".join(car_list))                               # add a - in first parameter
+print(", ".join(car_list))                              # add a , in first parameter
+
+# length of the String - len method
+print(len(cars))
+
+# print letters
+for letters in cars:
+    print(letters)
+
+# to ignore double quotes - use backslash \
+sentence = "She said, \"She loved the Cheesecake\" "
+print(sentence)
+
+# raw string    - r""
+path = 'Macintosh\nDocuments'                           # Problem
+print(path)
+path = r"Macintosh\nDocuments"                          # Solution r""
+print(path)
+path = r"c:\user\pwd"
+print(path)
+path = "c:\\user\\pwd"                                  # other Solution add \
+print(path)
+
+# Ask Containing Questions
+print("Rivian" in cars)                                 # returns True
+print("Riian" in cars)                                  # returns False
+

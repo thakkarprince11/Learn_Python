@@ -1,0 +1,33 @@
+# open shell
+python3
+
+# variable
+username = "earth"
+
+# printing variable
+username
+
+# storing different value in same variable
+username = "Down to Earth"
+
+# printing variable
+username
+
+# variable a and b. b has value of a
+a = 10
+b = a
+ 
+# printing a 
+a
+
+# printing b
+b
+
+# now changing value of a
+a = 15
+
+# printing a again and will print new value
+a
+
+# printing b again but it will print old value of a that was intintially stored
+b

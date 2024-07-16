@@ -1,0 +1,107 @@
+# Dictionary in python shell
+python3
+
+# Dictionary
+tea_types = {"Masala" : "Spicy", "Ginger" : "Zesty", "Green" : "Mild"}
+
+# Find Value by Key Index
+tea_types["Ginger"]
+
+tea_types["Gingerrr"]               # it will throw an error
+
+# Find Value by Key - Get method
+tea_types.get("Green")
+
+tea_types.get("Gingerrr")           # it will NOT throw an error and will return nothing
+
+# Change Value by Key Index
+tea_types["Green"] = "Fresh"
+tea_types
+
+# For Loop - Dictionary
+for tea in tea_types : 
+    print(tea)                      # it will ONLY print Keys
+
+for tea in tea_types : 
+    print(tea, tea_types[tea])      # it will print Keys and Values
+
+for tea in tea_types : 
+    print(tea_types[tea])           # it will ONLY print Values
+
+# For Loop - Dictionary using items method
+for key, values in tea_types.items() :
+    print(key, values)
+
+# If conditional - Dictionary
+if "Masala" in tea_types : 
+    print("I have Masala Chai")
+
+# Length - Dictionary
+print(len(tea_types))
+
+# Add New Values - Dictionary
+tea_types["Earl Grey"] = "Citrus"
+tea_types
+
+# Remove - Pop method
+tea_types.pop("Masala")             # You have to pass Key in pop method to remove
+tea_types
+
+# popitem method - It will remove last added item
+tea_types.popitem()         
+tea_types
+
+# Delete Dictionary Item - del method
+del tea_types["Green"]
+tea_types
+
+# Copy of Dictionary - copy method
+tea_types_copy = tea_types.copy()
+tea_types_copy
+tea_types
+
+# Dictionaries inside Dictionary
+tea_shop = {                                                                # Type Single Curly Braces and Enter
+    "Chai" : {"Masala" : "Spicy", "Green" : "Fresh", "Ginger" : "Zesty"},
+    "Tea" : {"Green" : "Mild", "Earl Grey" : "Citrus"},
+    "No_Milk" : {"Black" : "Strong"}
+    }
+tea_shop
+print(tea_shop)
+
+# Find a Dictionary using Index from inside Dictionary
+tea_shop["Chai"]
+tea_shop["Tea"]
+tea_shop["No_Milk"]
+
+# Find a Value of Dictionary inside Dictionary
+tea_shop["Chai"]["Green"]                       # returns Green's Value from "Chai" Dictionary
+tea_shop["Tea"]["Green"]                        # returns Green's Value from "Tea" Dictionary
+
+
+# Squared Numbers
+squared_nums = {x : x**2 for x in range(6)}
+squared_nums
+
+# Clear method
+squared_nums.clear()                            # returns empty Dictionary
+squared_nums
+
+# Dictionary Construct
+key_list = ["Masala", "Ginger", "Green"]
+key_list
+
+default_values = "Delicious"
+default_values
+
+new_dict = dict.fromkeys(key_list, default_values)
+new_dict
+
+values_list = ["Spicy", "Zesty", "Fresh"]
+
+latest_dict = dict.fromkeys(key_list, values_list)
+latest_dict                                    # not expected result
+
+
+
+

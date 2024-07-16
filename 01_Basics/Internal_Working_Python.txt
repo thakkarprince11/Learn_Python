@@ -1,0 +1,66 @@
+# ref count of memory allocation
+# importing sys
+import sys
+
+# finding ref count
+sys.getrefcount(24601)
+
+sys.getrefcount('Earth')
+
+# Finding memory working of python - garbage collector will not remove Numbers and String immediately
+a = 5
+a = 'Earth'
+a = 11.7
+
+a = 5
+b = 10
+a = a + 11
+
+# List working
+myListOne = [5, 10, 11, 7]
+myListTwo = myListOne
+myListOne = 'Earth'
+myListOne
+myListTwo
+myListOne = [5, 10, 11, 7]
+myListOne
+myListTwo
+myListOne[0] = 2000
+myListOne
+myListTwo
+
+l1 = [5, 10, 11, 7]
+l2 = l1
+l1[1] = 2000
+l1
+l2
+
+p1 = [5, 10, 11, 7]
+p2 = p1
+p1[1] = 97
+p1
+p2
+
+d1 = [5, 10, 11, 7]
+d2 = d1[:]              # Slicing but not given any start or end index so it will take whole List
+d1[2] = 2000
+d1
+d2                      # so, you have created a copy because of Slicing
+
+# importing copy
+import copy
+d2 = copy.copy(d1)
+d1
+d2
+d1[2] = 11
+d1
+d2
+d2 = copy.deepcopy(d1)  # extra -  if there is list inside the list then you need use deepcopy
+
+n = [5, 10, 11, 7]
+m = n
+m == n                  # Checking if both value is same - True
+m is n                  # It will check memory object that both are reffering to same object - True
+m = [5, 10, 11, 7]      # assigning new value to m
+m == n                  # True
+m is n                  # False
