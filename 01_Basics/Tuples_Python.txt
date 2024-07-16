@@ -1,0 +1,63 @@
+# Tuples in python shell
+python3
+
+# Tuples
+Why Tuples? Lists are mutable, but there was a necessity for an immutable structure, hence Tuples were introduced.
+
+car_brands = ("Tesla", "Porsche", "Hummer", "Rivian", "Pagani")
+car_brands
+
+# Find Value using Index in Tuple
+car_brands[0]
+car_brands[3]
+car_brands[-1]
+
+# Slice in Tuple
+print(car_brands[1:2])
+print(car_brands[0:2])
+print(car_brands[1:])
+print(car_brands[:2])
+print(car_brands[0:4:2])        # Skips 2
+
+# Change Tuple Values - throws error because Tuples are immutable
+car_brands[0] = "McLaren"
+
+# Length of Tuple
+len(car_brands)
+
+# Merge Two Tuples
+more_brands = ("Lamborghini", "Mercedes", "BMW") 
+more_brands
+
+all_brands = car_brands + more_brands
+all_brands
+
+# conditional statements in Tuple
+if "BMW" in all_brands:
+    print("BMW is one of the Car Brands")
+
+# Count method - Tuple
+ev_brands = ("Tesla", "Rivian", "Tesla")
+ev_brands
+
+ev_brands.count("Tesla")            # returns count
+ev_brands.count("Porsche")          # returns 0
+
+# Unwrap
+more_brands
+(Lambo, Merc, Beemer) = more_brands         # Unwraped and assigned each to a Variable. Variables and Values count must be same in both Tuples.
+Lambo                                       # returns "Lamborghini" - here Lambo is Variable and "Lamborghini" is it's Value
+Merc                                        # returns "Mercedes" - here Merc is Variable and "Mercedes" is it's Value
+Beemer                                      # returns "BMW" - here Beemer is Variable and "BMW" is it's Value
+
+# type method
+type(car_brands)                    # returns <class 'tuple'>
+
+# Nested Tuple
+nested = ("One", (2, 3, 4), "Five")
+nested
+nested[0]
+nested[1]
+nested[2]
+nested[1][0]                        # return value from nested (inside) tuple
+nested[1][1] 
