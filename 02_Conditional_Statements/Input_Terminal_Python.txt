@@ -1,0 +1,12 @@
+# Input from user using input method in python shell
+python3
+
+# input method
+userscore = input("Enter a score : ")           # Enter value in terminal
+userscore                                       # returns score in String
+
+# Convert score into integer
+userscore_int = int(userscore)                  # int method
+userscore_int                                   # returns score in integer
+
+
