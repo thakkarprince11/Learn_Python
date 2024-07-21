@@ -1,0 +1,10 @@
+
+# In Python Loops works differently then other langs.
+
+# Python calls loops Iterables or Iter.
+
+# 
+
+
+
+
