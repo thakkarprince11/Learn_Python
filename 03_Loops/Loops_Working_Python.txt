@@ -3,8 +3,19 @@
 
 # Python calls loops Iterables or Iter.
 
-# 
+# Iteration Tools
+- For Loops
+- Comprehensions
 
+# Iterable Objects
+- List
+- String
+- File                              # File treated differently
+
+# Respone
+__next__                            # respone
+
+# iter() method and next() method
 
 
 

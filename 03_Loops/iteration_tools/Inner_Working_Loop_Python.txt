@@ -1,0 +1,101 @@
+# Inner Working of Loops in Python
+
+# Python Shell
+python3
+
+# Open method - File
+file_temp = open('temp_file.py')
+
+# Read Line method
+file_temp.readline()                # It will read a Line
+file_temp.readline()                # It will read another Line
+file_temp.readline()                # It will read next Line
+
+# Again Open method - File
+file_temp = open('temp_file.py')
+
+# __next__ method
+file_temp.__next__()                # next method
+file_temp.__next__() 
+file_temp.__next__() 
+file_temp.__next__()
+file_temp.__next__()                # it will throw an error after file end of 'StopIteration'
+
+# For Loop - File
+for line in open('temp_file.py'):
+    print(line)
+
+# 
+for line in open('temp_file.py'):
+    print(line, end='')
+
+# While Loop - File
+file_temp = open('temp_file.py')
+while True:
+    line = file_temp.readline()
+    if not line : break
+    print(line, end='')
+
+
+# not - keyword
+test = "MG Hector"
+if not test:
+    print("Car")
+
+test = ""
+if not test:
+    print("Car")
+
+# List - iter method, __next__ method
+my_list = [1, 2, 3, 4]
+lst = iter(my_list)
+lst                         # returns <list_iterator object at 0x1031e9210>
+
+lst.__next__()              # returns first value
+lst                         # returns still has same memory reference
+
+lst.__next__()              # returns second value
+lst.__next__()
+lst.__next__()
+lst.__next__()              # throws an error - StopIteration
+
+# File - iter method
+file_temp = open('temp_file.py')
+iter(file_temp) is file_temp                # is iter method and open method holded reference is same? -  returns True
+iter(file_temp) is file_temp.__iter__()     # returns True
+
+# 
+myNewList = [1, 2, 3]
+iter(myNewList) is myNewList                # returns False
+
+# Dictionary - Iterable object
+dict = {'a' : 1, 'b' : 2, 'c' : 3}
+
+for keys in dict.keys():
+    print(keys)
+
+# iter method - Dictionary
+iter_dict = iter(dict)
+iter_dict                                   # returns <dict_keyiterator object at 0x1043cb6f0>
+
+# next method - Dictionary
+next(iter_dict)
+next(iter_dict)
+next(iter_dict)
+next(iter_dict)                             # throws an error - StopIteration
+
+# range - iter method
+range(5)                                    # returns range(0, 5)
+
+rng = range(5)
+rng
+
+iter_rng = iter(rng)                        # returns 0
+iter_rng = iter(rng)                        # returns 1
+iter_rng = iter(rng)                        # returns 2
+iter_rng = iter(rng)                        # returns 3
+iter_rng = iter(rng)                        # returns 4
+iter_rng = iter(rng)                        # throws an error - StopIteration
+
+# 
+

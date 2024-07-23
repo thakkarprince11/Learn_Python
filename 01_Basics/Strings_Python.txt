@@ -90,3 +90,14 @@ print(path)
 print("Rivian" in cars)                                 # returns True
 print("Riian" in cars)                                  # returns False
 
+# not - keyword
+test = "MG Hector"
+if not test:
+    print("Car")
+
+test = ""
+if not test:
+    print("Car")
+
+# 
+
