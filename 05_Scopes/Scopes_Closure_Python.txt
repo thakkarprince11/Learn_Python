@@ -1,0 +1,16 @@
+
+Scopes known as 'Namespaces' in Python.
+
+# Global Scope
+username = "Porsche"
+
+
+# Function/Def Scope after the indentation 
+def test():
+    pass
+
+# If Scope after the indentation
+if True:
+    pass
+
+# Closure also know as Factory Function
