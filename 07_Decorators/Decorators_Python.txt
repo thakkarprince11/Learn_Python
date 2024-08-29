@@ -1,0 +1,4 @@
+
+1. Decorators is like Toll Booth. Pay toll and go ahead. It can vary for Car, Bike and Trucks. same for Decorators in Python it can vary with Data, Situation and etc.
+
+2. It's similar like Higher Order Function in Javascript.
