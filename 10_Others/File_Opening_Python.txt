@@ -1,0 +1,21 @@
+
+# Python Shell
+python3
+
+# File Opening
+file = open('test.py')
+
+# Write Mode File - If there is no file then it will be created
+file_created = open('create_file.py', 'w')
+
+file_new = open('youtube.txt', 'w')
+
+# try catch finally - Error Handling
+try:
+    file_new.write('Radha Krishn')
+finally:
+    file_new.close()
+
+# Now Python has New Syntax to Handle File
+with open('youtube.txt', 'w') as file:
+    file.write('Radhe Radhe')

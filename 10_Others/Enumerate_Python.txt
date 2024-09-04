@@ -1,0 +1,14 @@
+
+# Python Shell
+python3
+
+# Tuple
+x = ('Masala','Ginger','Lemon')
+
+# Enumerated
+y = enumerate(x)
+y                       returns <enumerate object at 0x104ee7790>
+
+# List from enumerate
+list(y)                 returns [(0, 'Masala'), (1, 'Ginger'), (2, 'Lemon')]
+
