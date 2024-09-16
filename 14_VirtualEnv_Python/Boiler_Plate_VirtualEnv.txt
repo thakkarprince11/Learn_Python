@@ -1,0 +1,10 @@
+1. pip3 install virtualenv
+2. Open Integrated Terminal -> python3 -m venv name
+3. Open Integrated Terminal -> source name/bin/activate
+4. Open Integrated Terminal -> python --version
+5. Open Integrated Terminal -> pip list
+6. Open Integrated Terminal -> pip list > requirements.txt
+7. Open Integrated Terminal -> pip freeze > requirements.txt
+8. Open Integrated Terminal -> pip install -r requirements.txt
+9. Open Integrated Terminal -> python -m pip install Django
+10. Open Integrated Terminal -> deactivate
