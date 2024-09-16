@@ -1,0 +1,16 @@
+1. Install Anaconda Navigator.
+2. Launch Anaconda Navigator.
+3. Open Terminal -> python —version
+4. Open Terminal -> condo info
+5. Open Terminal -> conda env list
+6. Open Terminal -> conda create --name py310 python==3.10
+7. Open Terminal -> conda env list
+8. Open Terminal -> conda activate py310
+9. Open Terminal -> conda deactivate
+10. Open Terminal -> conda install seaborn
+11. Open Terminal -> python
+12. Open Terminal -> import numpy as np
+13. Open Terminal -> exit()
+14. Open Terminal -> conda deactivate
+15. Open Terminal -> conda config --set auto_activate_base false
+16. Open Terminal -> conda activate
